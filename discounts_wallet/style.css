@@ -1,0 +1,131 @@
+/* impotando la fuente de la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+/* aplicando la fuente a la pagina */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--col-white);
+}
+
+/* @media screen and (min-width:1200px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+} */
+
+/* seteando los estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* creando variables para los colores */
+:root{
+    --col-primary: #FE9A22;
+    --col-secondary: #d5fafc;
+    --col-secondary-hover: #a4c2c4;
+    --col-black: #111;
+    --col-white: #f3f3f3;
+    --col-hover: #888;
+    --col-hover-2: #383838;
+    --col-hover-3: #a1a1a1;
+    --col-rgba: rgb(0, 0, 0, 0.6);
+    --col-rgba-2: rgb(0, 0, 0, 0.1);
+    --col-white-2: #e7e0e0;
+    --col-green: #26b621;
+    --col-green-hover: #1e8b1b;
+}
+
+
+/* header */
+
+header{
+    padding: 30px;
+}
+
+@media screen and (min-width:1200px) {
+    header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:420px) {
+    header{
+        padding: 15px;
+    }
+}
+
+
+/* discounts_container */
+
+.discounts_title{
+    font-size: 1.8em;
+    font-weight: 500;
+    color: var(--col-black);
+    text-align: center;
+}
+
+.discounts_paragraph{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--col-black);
+    margin: .5em 0 .8em;
+}
+
+.h2_description{
+    margin: .8em 0;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.discounts_box{
+    background-color: var(--col-black);
+    box-shadow: 2px 2px 10px var(--col-rgba);
+    border-radius: 0 2em 2em;
+    width: 15em;
+    transition: transform, 200ms ease;
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.discounts_box:hover{
+  transform: scale(1.1);
+}
+
+.count_discounts{
+    font-size: 1.6em;
+    font-weight: 500;
+    color: var(--col-white);
+    margin: 0 1em;
+}
+
+@media screen and (min-width:1200px) {
+    .discounts_container{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .discounts_paragraph{
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .discounts_paragraph{
+        font-size: 1.1em;
+        width: 100%;
+    }
+}
