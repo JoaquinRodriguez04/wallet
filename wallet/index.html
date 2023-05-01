@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="wallet" class="wallet_personal">
+            <div class="money_personal">
+                <div class="money_personal_information_bank">
+                    <h2 id="data_h2">Saldo disponible</h2><br>
+                    <p id="data_p">$00,00</p>
+                </div>
+                <img src="imagenes/logotype_black(03).png" alt="">
+            </div>
+            <div class="details_pesonal">
+                <!-- <div class="details">
+                    <button id="btn_wallet" class="btn_details"><a href="#">+</a></button>
+                    <h2 id="data">details</h2>
+                </div> -->
+                <div class="numbers">
+                    <h2>xxxxxxx</h2>
+                </div>
+                <div class="date">
+                    <h2 id="data">xx / xx</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="add_card">
+            <h2 class="titles_sections">añadir tarjeta</h2>
+            <div class="form_add_card">
+                <form class="form" action="#">
+                    <div class="box_form">
+                        <label for="#">que tarjeta quieres añadir?</label>
+                        <select name="tarjeta" id="tarjeta">
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">Mastercard</option>
+                            <option value="bbva">BBVA</option>
+                            <option value="tarjetanaranja">Tarjeta Naranja</option>
+                            <option value="santander">Santander</option>
+                            <option value="itau">Itau</option>
+                        </select>
+                    </div>
+                    <div class="box_form">
+                        <label for="#">agregue el numero de su tarjeta</label>
+                        <input type="text">
+                    </div>
+                    <div class="box_form">
+                        <label for="#">agregue la fecha de vencimiento</label>
+                        <input type="text">
+                    </div>
+                    <div class="box_form">
+                        <button><a href="#">agregar</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="points_container" class="points_container">
+            <h2 class="titles_sections">obtener puntos</h2>
+            <p class="points_paragraph">para obtener puntos, debes añadir una tarjeta de credito, y realizar compras con la app.</p>
+            <div class="points_box">
+                <h2 class="count_points">0</h2>
+                <h2>puntos</h2>
+            </div>
+        </div>
+
+        <div class="discounts_container"> 
+            <h2 class="titles_sections">descuentos</h2>
+            <p class="discounts_paragraph">los descuentos los puedes obtener si solo obtienes puntos. A partir de compras con la app se te daran descuentos y cupos para tus futuras compras con la app.</p>
+            <div class="discounts_box">
+                <img src="imagenes/icon_cupon.png" alt="">
+                <h2 class="count_discounts">0 cupos</h2>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
