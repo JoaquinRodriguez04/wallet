@@ -1,0 +1,648 @@
+/* impotando la fuente de la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+/* aplicando la fuente a la pagina */
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--col-white);
+}
+
+@media screen and (min-width:1200px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+/* seteando los estilos generales */
+*{
+    margin: 0;
+    padding: 0
+}
+
+/* creando variables para los colores */
+:root{
+    --col-primary: #FE9A22;
+    --col-secondary: #d5fafc;
+    --col-secondary-hover: #a4c2c4;
+    --col-back: #111;
+    --col-white: #f3f3f3;
+    --col-hover: #888;
+    --col-hover-2: #383838;
+    --col-hover-3: #a1a1a1;
+    --col-rgba: rgb(0, 0, 0, 0.6);
+    --col-rgba-2: rgb(0, 0, 0, 1);
+    --col-white-2: #e7e0e0;
+    --col-green: #26b621;
+    --col-green-hover: #1e8b1b;
+}
+
+/* header */
+
+header{
+    padding: 35px;
+}
+
+@media screen and (min-width:320px) and (max-width:420px) {
+    header{
+        padding: 15px;
+    }
+}
+
+
+/* navbar_personal */
+
+.navbar_personal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_personal .img_personal{
+    background-image: url(imagenes/logo_user.jfif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    padding: 3em;
+}
+
+.information_personal{
+    display: flex;
+    align-items: center;
+}
+
+.name_personal > h2{
+    font-size: 2em;
+    margin: 0 20px;
+}
+
+.navbar_icons{
+    display: flex;
+}
+
+.navbar_icons > i{
+    font-size: 1.9em;
+    color: var(--col-back);
+    margin-left: 15px;
+}
+
+.navbar_icons > i:hover{
+   color: var(--col-primary);
+}
+
+@media screen and (min-width:1000px) {
+    .name_personal > h2{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:516px) {
+    .name_personal > h2{
+        width: 70%;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:550px) {
+    .name_personal > h2{
+        font-size: 1.8em;
+    }
+
+    .navbar_personal .img_personal{
+        padding: 2.5em;
+    }
+ 
+}
+
+/* wallet_personal */
+
+.wallet_personal{
+    background-color: var(--col-back);
+    margin: 30px 0;
+    padding: 1.5em;
+    border-radius: 40px;
+    box-shadow: 2px 2px 10px var(--col-rgba);
+    display: flex;
+    flex-direction: column;
+}
+
+.money_personal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.money_personal > img{
+    width: 7em;
+}
+
+.money_personal_information_bank{
+  color: var(--col-white);
+}
+
+.money_personal_information_bank > h2{
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.money_personal_information_bank > p{
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.details_pesonal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0 0;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+}
+
+.btn_details{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--col-white);
+    margin-right: 15px;
+}
+
+.btn_details:hover{
+    background-color: var(--col-hover);
+    cursor: pointer;
+}
+
+.btn_details > a{
+    font-size: 3em;
+    text-decoration: none;
+    color: var(--col-back);
+}
+
+.details > h2{
+   color: var(--col-white);
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.date > h2{
+    font-size: 2em;
+    font-weight: 500;
+    color: var(--col-white);
+}
+
+@media screen and (min-width:938px) {
+    .wallet_personal{
+       width: 50em;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:550px) {
+    .btn_details{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 3em;
+         height: 3em;
+    }
+ 
+    .btn_details > a{
+     font-size: 2.5em;
+    }
+
+    .wallet_personal{
+        padding: 1.5em 1em;
+    }
+
+    .money_personal_information_bank > h2{
+        font-size: 1.2em;
+    }
+    
+    .money_personal_information_bank > p{
+        font-size: 1.5em;
+    }
+
+    .money_personal >img{
+        width: 5em;
+    }
+
+    .details > h2{
+        font-size: 1.2em;
+     }
+     
+    .date > h2{
+        font-size: 1.2em;
+    }
+ 
+}
+ 
+
+/* infomation_personal */
+
+.infomation_personal{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.transfer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--col-back);
+    padding: 2.5em 0;
+    width: 20em;
+    border-radius: 20px;
+}
+
+.transfer > i{
+   font-size: 1.5em;
+   color: var(--col-secondary);
+}
+
+.info_transfer{
+  margin-left: 25px;
+  color: var(--col-white);
+}
+
+.info_transfer > h2{
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.request{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--col-back);
+    padding: 2.5em 0;
+    width: 20em;
+    border-radius: 20px;
+}
+
+.request > i{
+   font-size: 1.5em;
+   color: var(--col-secondary);
+}
+
+.info_request{
+  margin-left: 25px;
+  color: var(--col-white);
+}
+
+.info_request > h2{
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+@media screen and (min-width:938px) {
+    .infomation_personal{
+        flex-direction: column;
+
+    }
+
+    .transfer{
+        margin-bottom: 1em;
+    }
+
+}
+
+@media screen and (max-width:722px) {
+    .infomation_personal{
+        flex-direction: column;
+
+    }
+
+    .transfer{
+        margin-bottom: 1em;
+    }
+    
+    .transfer ,.request{
+        width: 15em;
+        padding: 1.2em 0;
+    }
+
+}
+
+@media screen and (max-width:496px) {
+    .transfer ,.request{
+        width: 15em;
+        padding: 1.2em 0;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .transfer ,.request{
+        width: 15em;
+        padding: 1.2em 0;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:420px) {
+    .transfer ,.request{
+        width: 15em;
+        padding: 1.2em 0;
+    }
+
+}
+
+/* sent_to_container */
+
+.sent_to_container{
+    margin-top: 5em;
+}
+
+.sent_to_information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sent_to_information > h2{
+  font-size: 2.2em;
+  font-weight: 500;
+}
+
+.btn_sent_to{
+    /* background-color: var(--col-white); */
+    border: none;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+}
+
+.btn_sent_to:hover{
+  cursor: pointer;
+}
+
+.btn_sent_to > a{
+  margin-right: 10px;
+  color: var(--col-back);
+  text-decoration: none;
+}
+
+.btn_sent_to > i{
+   font-size: 1.5em;
+}
+
+.persons_contact{
+    display: flex;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.person{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2em;
+   background-color: var(--col-secondary);
+   border-radius: 2em;
+   margin-right: 1em;
+}
+
+.person:hover{
+    background-color: var(--col-secondary-hover);
+}
+
+.person > img{
+    width: 5.5em;
+}
+
+.person > p{
+    font-size: 1.2em;
+}
+
+/* @media screen and (min-width:100px){
+    .persons_contact{
+        justify-content: space-evenly;
+    }
+} */
+
+/* transaction_container */
+
+.transaction_container{
+    margin-top: 4em;
+    height: 30vh;
+}
+
+.transaction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction > h2{
+   font-size: 2em;
+   
+}
+
+.transaction > select{
+    border-radius: 30em;
+    padding: 1em;
+    border: none;
+    outline: none;
+    background-color: var(--col-back);
+    color: var(--col-white);
+    font-size: 1em;
+}
+
+.transaction > select:hover{
+   background-color: var(--col-hover-2);
+}
+ 
+.pays_container{
+    display: flex;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.pay{
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--col-white-2);
+    padding: 1.2em 1em;
+    width: 20em;
+    border-radius: 1em;
+}
+
+.pay:hover{
+    background-color: var(--col-hover-3);
+}
+
+.company{
+    display: flex;
+    align-items: center;
+}
+
+.company > img{
+    width: 3em;
+    margin-right: 10px;
+}
+
+.cash{
+    width: 5em;
+    margin-left: 1em;
+}
+
+@media screen and (min-width:320px) and (max-width:420px) {
+    .transaction{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .transaction > h2{
+       margin-bottom: .5em;
+    }
+}
+
+/* navbar_lower */
+
+.navbar_lower{
+    background-color: var(--col-white-2);
+    box-shadow: 3px 3px 10px var(--col-rgba);
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.navbar_lower .house{
+    color: var(--col-black);
+    font-size: 2em;
+    margin: 0 2em;
+}
+
+.navbar_lower > i{
+  color: var(--col-black);
+  font-size: 2em;
+  margin: 0 2em;
+}
+
+.navbar_lower > i:hover{
+    color: var(--col-hover-3);
+}
+  
+
+.navbar_lower .house{
+    color: var(--col-secondary-hover);
+}
+
+.navbar_lower .house:hover{
+    color: var(--col-secondary);
+}
+
+.navbar_lower .verified{
+    color: var(--col-green);
+}
+
+.navbar_lower .verified:hover{
+    color: var(--col-green-hover);
+}
+
+@media screen and (min-width:320px) and (max-width:420px) {
+    .navbar_lower{ 
+        padding: 1.2em 0;
+    }
+}
+
+.nav{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+
+/* barra lateral de usuario */
+
+.nav_list_perfil{
+    background-color: var(--col-secondary);
+    height: 100%;
+    padding: 3em 2.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+
+.nav_list_perfil > i{
+    flex-basis: 2em;
+    font-size: 2em;
+    color: var(--col-back);
+}
+
+.nav_list_perfil > a{
+    flex-basis: 3em;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: var(--col-back);
+}
+
+.nav_list_perfil > a:hover{
+    color: var(--col-secondary-hover);
+}
+
+/* barra lateral de novedades */
+
+.lightning{
+    background-color: var(--col-secondary);
+    width: 30%;
+}
+
+.navbar_light{
+    padding: 2em 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navbar_light > i{
+    flex-basis: 3em;
+    font-size: 2em;
+    color: var(--col-back);
+}
+
+.navbar_light > h2{
+    font-size: 1.5em;
+}
+
+.nav_visible{
+    display: block;
+}
+
+/* modes dark and light */
+.dark_mode_tarjets{
+    background-color: var(--col-black);
+    /* color: var(--col-white); */
+}
+
+.dark_mode_etiquets{
+    color: var(--col-hover-2); 
+}
+
+.light_mode_tarjets{
+    background-color: var(--col-white);
+}
+
+.light_mode_etiquets{
+    color: var(--col-white);
+}
