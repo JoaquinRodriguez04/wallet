@@ -16,12 +16,12 @@
                 <div class="img_personal"></div>
                 
                 <div class="name_personal">
-                    <h2 id="name_navbar">hola Joaquin, bienvenido de nuevo</h2>
+                    <h2 id="name_navbar" class="name_navbar">hola Joaquin, bienvenido de nuevo</h2>
                 </div>
             </div>
 
             <div class="navbar_icons">
-                <i id="mode_Dark" class="bi bi-moon-fill"></i>
+                <i id="mode_Dark" class="bi bi-moon-fill "></i>
                 <!-- <i id="beel" class="bi bi-bell-fill"></i> -->
             </div>
         </div>
@@ -32,7 +32,7 @@
                     <h2 id="data_h2">monto disponible</h2><br>
                     <p id="data_p">$00,00</p>
                 </div>
-                <img src="imagenes/logotype_black(03).png" alt="">
+                <img src="imagenes/logotype_black.png" alt="">
             </div>
             <div class="details_pesonal">
                 <div class="details">
@@ -47,14 +47,14 @@
 
         <div class="infomation_personal">
             <div id="transfer" class="transfer">
-                <i class="bi bi-send-fill"></i>
+                <i id="icon" class="bi bi-send-fill"></i>
                 <div class="info_transfer">
                     <h2 id="data">enviar</h2>
                     <p id="data">$0.00</p>
                 </div>
             </div>
             <div id="request" class="request">
-                <i class="bi bi-cloud-download-fill"></i>
+                <i id="icon" class="bi bi-cloud-download-fill black"></i>
                 <div class="info_request">
                     <h2 id="data">recibir</h2>
                     <p id="data">$0.00</p>
@@ -65,7 +65,7 @@
         <div class="sent_to_container">
             <div class="sent_to_information">
                 <h2 id="data_2">enviar</h2>
-                <button id="btn_sentTo" class="btn_sent_to"><a id="a_sentTo" href="#">ver todos</a><i class="bi bi-arrow-right-short"></i></button>
+                <button id="btn_sentTo" class="btn_sent_to"><a id="a_sentTo" class="a_sentTo" href="#">ver todos</a><i class="bi bi-arrow-right-short"></i></button>
             </div>
 
             <div class="persons_contact">
@@ -143,7 +143,7 @@
 
         <div class="navbar_lower" id="navbar_low" >
             <i class="bi bi-check-circle-fill verified"></i>
-            <i class="bi bi-wallet2"></i>
+            <a href="./wallet/index.html"><i class="bi bi-wallet2 wallet"></i></a>
             <a href="#navbar_personal"><i class="bi bi-house-fill house"></i></a>
             <i id="perfil" class="bi bi-person-fill"></i>
             <i id="lightning" class="bi bi-lightning-charge-fill"></i>
@@ -152,9 +152,9 @@
         <nav id="navbar_perfil" class="nav">
             <ul class="nav_list_perfil">
                 <i id="close" class="bi bi-x"></i>
-                <a href="./wallet/index.html/">puntos</a>
                 <a href="./wallet/index.html">añadir tarjeta</a>
-                <a href="./wallet/index.html">descuentos</a>
+                <a href="./points_wallet/index.html">puntos</a>
+                <a href="./discounts_wallet/index.html">descuentos</a>
             </ul>
         </nav>
 
