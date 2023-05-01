@@ -20,7 +20,8 @@ body{
 /* seteando los estilos generales */
 *{
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* creando variables para los colores */
@@ -48,7 +49,7 @@ header{
 
 @media screen and (min-width:320px) and (max-width:420px) {
     header{
-        padding: 15px;
+        padding: 20px;
     }
 }
 
@@ -372,7 +373,7 @@ header{
 }
 
 .btn_sent_to{
-    /* background-color: var(--col-white); */
+    background-color: var(--col-white);
     border: none;
     font-size: 1.3em;
     display: flex;
@@ -421,12 +422,6 @@ header{
 .person > p{
     font-size: 1.2em;
 }
-
-/* @media screen and (min-width:100px){
-    .persons_contact{
-        justify-content: space-evenly;
-    }
-} */
 
 /* transaction_container */
 
@@ -514,23 +509,22 @@ header{
     box-shadow: 3px 3px 10px var(--col-rgba);
     padding: 2em 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     position: fixed;
     left: 0;
     bottom: 0;
     right: 0;
+
 }
 
 .navbar_lower .house{
     color: var(--col-black);
     font-size: 2em;
-    margin: 0 2em;
 }
 
 .navbar_lower > i{
   color: var(--col-black);
   font-size: 2em;
-  margin: 0 2em;
 }
 
 .navbar_lower > i:hover{
@@ -552,6 +546,20 @@ header{
 
 .navbar_lower .verified:hover{
     color: var(--col-green-hover);
+}
+
+@media screen and (min-width:1198px){
+    .navbar_lower{ 
+        justify-content: center;
+    }
+
+    .navbar_lower .house{
+        margin: 0 2em;
+    }
+    
+    .navbar_lower > i{
+      margin: 0 2em;
+    }
 }
 
 @media screen and (min-width:320px) and (max-width:420px) {
