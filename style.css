@@ -8,6 +8,10 @@ body{
     background-color: var(--col-white);
 }
 
+.black_body{
+    background-color: var(--col-black);
+}
+
 @media screen and (min-width:1200px) {
     body{
         display: flex;
@@ -29,7 +33,7 @@ body{
     --col-primary: #FE9A22;
     --col-secondary: #d5fafc;
     --col-secondary-hover: #a4c2c4;
-    --col-back: #111;
+    --col-black: #111;
     --col-white: #f3f3f3;
     --col-hover: #888;
     --col-hover-2: #383838;
@@ -75,9 +79,14 @@ header{
     align-items: center;
 }
 
-.name_personal > h2{
+.name_personal .name_navbar{
     font-size: 2em;
     margin: 0 20px;
+    color: var(--col-black);
+}
+
+.name_personal .white{
+    color: var(--col-white);
 }
 
 .navbar_icons{
@@ -86,8 +95,12 @@ header{
 
 .navbar_icons > i{
     font-size: 1.9em;
-    color: var(--col-back);
+    color: var(--col-black);
     margin-left: 15px;
+}
+
+.navbar_icons .white{
+    color: var(--col-white);
 }
 
 .navbar_icons > i:hover{
@@ -121,13 +134,17 @@ header{
 /* wallet_personal */
 
 .wallet_personal{
-    background-color: var(--col-back);
+    background-color: var(--col-black);
     margin: 30px 0;
     padding: 1.5em;
     border-radius: 40px;
     box-shadow: 2px 2px 10px var(--col-rgba);
     display: flex;
     flex-direction: column;
+}
+
+.white_wallet{
+    background-color: var(--col-secondary-hover);
 }
 
 .money_personal{
@@ -182,7 +199,7 @@ header{
 .btn_details > a{
     font-size: 3em;
     text-decoration: none;
-    color: var(--col-back);
+    color: var(--col-black);
 }
 
 .details > h2{
@@ -256,15 +273,23 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--col-back);
+    background-color: var(--col-black);
     padding: 2.5em 0;
     width: 20em;
     border-radius: 20px;
 }
 
+.primary_transfer{
+    background-color: var(--col-secondary-hover);
+}
+
 .transfer > i{
    font-size: 1.5em;
    color: var(--col-secondary);
+}
+
+.transfer .black{
+    color: var(--col-black);
 }
 
 .info_transfer{
@@ -281,15 +306,23 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--col-back);
+    background-color: var(--col-black);
     padding: 2.5em 0;
     width: 20em;
     border-radius: 20px;
 }
 
+.primary_request{
+    background-color: var(--col-secondary-hover);
+}
+
 .request > i{
    font-size: 1.5em;
    color: var(--col-secondary);
+}
+
+.request .black{
+    color: var(--col-black);
 }
 
 .info_request{
@@ -380,14 +413,23 @@ header{
     align-items: center;
 }
 
+.black_btn{
+  background-color: var(--col-black);
+  color: var(--col-white);
+}
+
 .btn_sent_to:hover{
   cursor: pointer;
 }
 
-.btn_sent_to > a{
+.btn_sent_to .a_sentTo{
   margin-right: 10px;
-  color: var(--col-back);
+  color: var(--col-black);
   text-decoration: none;
+}
+
+.btn_sent_to .white_a{
+    color: var(--col-white);
 }
 
 .btn_sent_to > i{
@@ -441,18 +483,23 @@ header{
    
 }
 
-.transaction > select{
+.transaction .select{
     border-radius: 30em;
     padding: 1em;
     border: none;
     outline: none;
-    background-color: var(--col-back);
+    background-color: var(--col-black);
     color: var(--col-white);
     font-size: 1em;
 }
 
+.transaction .black{
+    background-color: var(--col-white);
+    color: var(--col-black);
+}
+
 .transaction > select:hover{
-   background-color: var(--col-hover-2);
+   background-color: var(--col-hover);
 }
  
 .pays_container{
@@ -517,23 +564,28 @@ header{
 
 }
 
-.navbar_lower .house{
-    color: var(--col-black);
-    font-size: 2em;
-}
 
 .navbar_lower > i{
-  color: var(--col-black);
-  font-size: 2em;
+    color: var(--col-black);
+    font-size: 2em;
 }
 
 .navbar_lower > i:hover{
     color: var(--col-hover-3);
 }
-  
+
+.navbar_lower .wallet{
+    font-size: 2em;
+    color: var(--col-black);
+}
+
+.navbar_lower .wallet:hover{
+    color: var(--col-hover-3);
+}
 
 .navbar_lower .house{
     color: var(--col-secondary-hover);
+    font-size: 2em;
 }
 
 .navbar_lower .house:hover{
@@ -554,6 +606,10 @@ header{
     }
 
     .navbar_lower .house{
+        margin: 0 2em;
+    }
+
+    .navbar_lower .wallet{
         margin: 0 2em;
     }
     
@@ -592,7 +648,7 @@ header{
 .nav_list_perfil > i{
     flex-basis: 2em;
     font-size: 2em;
-    color: var(--col-back);
+    color: var(--col-black);
 }
 
 .nav_list_perfil > a{
@@ -600,7 +656,7 @@ header{
     text-decoration: none;
     font-size: 1.3em;
     font-weight: 500;
-    color: var(--col-back);
+    color: var(--col-black);
 }
 
 .nav_list_perfil > a:hover{
@@ -626,7 +682,7 @@ header{
 .navbar_light > i{
     flex-basis: 3em;
     font-size: 2em;
-    color: var(--col-back);
+    color: var(--col-black);
 }
 
 .navbar_light > h2{
@@ -637,20 +693,3 @@ header{
     display: block;
 }
 
-/* modes dark and light */
-.dark_mode_tarjets{
-    background-color: var(--col-black);
-    /* color: var(--col-white); */
-}
-
-.dark_mode_etiquets{
-    color: var(--col-hover-2); 
-}
-
-.light_mode_tarjets{
-    background-color: var(--col-white);
-}
-
-.light_mode_etiquets{
-    color: var(--col-white);
-}
